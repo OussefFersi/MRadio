@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_account"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="fatalgamer.com.mradioto.activities.AccountActivity">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/profileName"
+    android:text="Profile name"
+
+    />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileEmail"
+        android:text="Profile email"
+        android:layout_below="@+id/profileName"
+        android:paddingTop="5dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileProvider"
+        android:text="Profile provider"
+        android:layout_below="@+id/profileEmail"
+        android:paddingTop="5dp"
+        />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/profileImage"
+        android:layout_below="@+id/profileProvider"
+        android:paddingTop="5dp"
+        />
+    <Button
+        android:text="Log Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/logOutBtn" />
+</RelativeLayout>

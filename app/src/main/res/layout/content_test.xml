@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.RadioDetail2Activity"
+    tools:showIn="@layout/activity_radio_detail2">
+
+    <RelativeLayout
+        android:id="@+id/rlBig"
+        android:layout_width="250dp"
+        android:layout_height="260dp"
+
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/big"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerInParent="true"
+             />
+
+        <ImageView
+            android:id="@+id/northwest"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/webcam" />
+
+        <ImageView
+            android:id="@+id/southeast"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/twitter" />
+
+        <ImageView
+            android:id="@+id/southwest"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/rss" />
+
+        <ImageView
+            android:id="@+id/northeast"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/share" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/right"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-15dp"
+        android:layout_toRightOf="@+id/rlBig"
+        android:background="@drawable/instgram" />
+
+    <ImageView
+        android:id="@+id/left"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="-15dp"
+        android:layout_toLeftOf="@+id/rlBig"
+        android:background="@drawable/favorite" />
+
+    <ImageView
+        android:id="@+id/top"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/rlBig"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-15dp"
+        android:background="@drawable/facebook" />
+
+    <ImageView
+        android:id="@+id/bottom"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/rlBig"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-10dp"
+        android:background="@drawable/youtube" />
+</RelativeLayout>
